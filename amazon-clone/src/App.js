@@ -13,15 +13,15 @@ function App() {
           
           {/* cart page route  */}
         <Route path="/cart">
-            <Header /> 
-            <h2>this is my cart page</h2>
-          </Route>
+          <Header /> 
+          <h2>this is my cart page</h2>
+        </Route>
 
-            {/* home page route  */}
-          <Route path="/">
-            <Header /> 
-            <Home />
-          </Route>
+          {/* home page route  */}
+        <Route path="/">
+          <Header /> 
+          <Home />
+        </Route>
 
         </Switch>
       {/* Footer */}
