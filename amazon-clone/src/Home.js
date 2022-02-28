@@ -6,9 +6,9 @@ function Home() {
   return (
     <div className='home'>
         <div className='home__container'>
-            <div className='home__image'>
-                <img className='home__image' src='https://www.savoo.co.uk/blog/wp-content/uploads/sites/3/2019/06/amazon-prime-day-banner.jpeg'/>
-            </div>
+            
+            <img className='home__image' src='https://www.savoo.co.uk/blog/wp-content/uploads/sites/3/2019/06/amazon-prime-day-banner.jpeg'/>
+            
             
             <div className='home__row'>
                 <Product 
