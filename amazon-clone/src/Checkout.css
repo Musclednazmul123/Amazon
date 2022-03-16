@@ -10,3 +10,13 @@
     padding: 10px;
     border-bottom: 1px solid lightgray;
 }
+
+.checkout__left {
+    width: 100%;
+}
+
+.checkout__left > img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}

@@ -33,7 +33,7 @@ function Home() {
                     title='new product title' 
                     price={299.00} 
                     image='https://i.pinimg.com/736x/b4/d0/cf/b4d0cf8787fcf3fa318ae283bca2d7d1.jpg' 
-                    rating={5} 
+                    rating={1} 
                 />
                 <Product 
                     id = '0121231306'

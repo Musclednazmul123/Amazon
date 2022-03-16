@@ -41,6 +41,10 @@
     
 }
 
+.header__nav > a {
+    text-decoration: none;
+}
+
 .header__optionLineOne {
     font-size: 10px;
 }
