@@ -26,6 +26,7 @@ function Payment() {
   useEffect(() => {
     // generate the special stripe secret which allows us to charge a customer
 
+
     const getClientSecret = async () => {
       const response = await axios({
         method: 'post',
@@ -127,15 +128,7 @@ function Payment() {
               <div className='payment__priceContainer'>
                 <CurrencyFormat
                   renderText={(value) => (
-                    <>
-                      <p>
-                        Subtotal ({basket.length} items):
-                        <strong> {value}</strong>
-                      </p>
-                      <small className='subtotal__gift'>
-                        <input type='checkbox' /> This order contains a gift
-                      </small>
-                    </>
+                    <h3> Orders Total: {value} </h3>
                   )}
                   decimalScale={2}
                   value={getBasketTotal(basket)}

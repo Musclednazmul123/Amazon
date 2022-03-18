@@ -3,7 +3,7 @@ import './CheckoutProduct.css'
 import StarIcon from '@mui/icons-material/Star';
 import { useStateValue } from './StateProvider';
 
-function CheckoutProduct({id, image, title, price, rating}) {
+function CheckoutProduct({id, image, title, price, rating, hideButton}) {
     const [{ basket }, dispatch] = useStateValue();
 
     const removeFromBasket = () =>{
@@ -30,7 +30,10 @@ function CheckoutProduct({id, image, title, price, rating}) {
                 ))}
 
             </div>
-            <button onClick={removeFromBasket}>Remove Item</button>
+            {!hideButton && (
+                <button onClick={removeFromBasket}>Remove Item</button>
+            )}
+            
         </div>
     </div>
   )
